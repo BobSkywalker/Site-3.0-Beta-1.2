@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: "KA";
+  src: url(Fontes/Starjedi.ttf) format(truetype);
+}
+body {
+  backdrop-filter: blur(5px);
+  height: 100vh;
+  overflow-x: hidden;
+  background-image: url(Imagens/Background.jpg);
+  transition: 0.5s;
+}
+header {
+  text-align: center;
+  background-color: #495ceb;
+  padding: 10px;
+  box-shadow: 1px 1px 10px black;
+  transition: 0.5s;
+}
+header h1 {
+  font-family: "KA";
+}
+#botao {
+  margin: 7px;
+  padding: 5px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+#botao p {
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.5s;
+  font-weight: bold;
+}
+#botao:hover {
+  transition: 0.5s;
+  background-color: #f0e02c;
+}
+#botao p:hover {
+  color: red;
+  transition: 0.5s;
+}
+header a {
+  font-family: Arial;
+  font-weight: bolder;
+  text-decoration: none;
+  color: black;
+  margin: 10px;
+  padding: 4px;
+  transition: 0.5s;
+}
+header a:hover {
+  color: rgb(255, 0, 0);
+  background-color: #f0e02c;
+  border-radius: 10px;
+  margin: 10px;
+  transition: 0.5s;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.games {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  gap: 40px;
+  transition: 0.5s;
+}
+.game {
+  background-position: center;
+  background-size: cover;
+  width: 370px;
+  height: 550px;
+  border: solid blue;
+  box-shadow: 1px 1px 5px blue;
+  transition: 0.5s;
+}
+.games:hover .game {
+  filter: blur(10px);
+  width: 250px;
+  transition: 0.7s;
+}
+.games .game:hover {
+  transform: scale(1.07);
+  width: 350px;
+  filter: blur(0px);
+  transition: 0.7s;
+  box-shadow: 1px 1px 10px blue;
+}
+#game {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+.imagens {
+  width: 400px;
+  height: 550px;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  background-color: #495ceb;
+  width: 100%;
+  height: 30px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  transition: 0.5s;
+}
+footer p {
+  text-align: justify;
+  font-family: KA;
+  color: black;
+}
+.endFooter2 {
+  text-align: end;
+}
+.endFooter2 a {
+  text-decoration: none;
+  color: red;
+  transition: 0.5s;
+}
+.endFooter2 a:hover {
+  color: blue;
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 50px;
+  }
+  header h1 {
+    font-size: medium;
+  }
+  .imagens {
+    width: 250px;
+    height: 350px;
+  }
+  header a {
+    font-size: medium;
+  }
+  .games {
+    display: grid;
+  }
+  .game {
+    width: 250px;
+    height: 350px;
+  }
+  footer {
+    display: none;
+    pointer-events: none;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 1300px) {
+  .game {
+    width: 300px;
+    height: 400px;
+  }
+  .games {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 100px;
+  }
+  .imagens {
+    width: 300px;
+    height: 400px;
+  }
+  body {
+    height: 100%;
+  }
+  footer {
+    display: none;
+    pointer-events: none;
+  }
+}
+
+header.active {
+  background-color: #04135b;
+  transition: 0.5s;
+  color: hwb(123 27% 7%);
+}
+.link1.active {
+  color: hwb(123 27% 7%);
+}
+.link2.active {
+  color: hwb(123 27% 7%);
+}
+.link3.active {
+  color: hwb(123 27% 7%);
+}
+.footer.active {
+  background-color: #04135b;
+  transition: 0.5s;
+  color: hwb(0 89% 11%);
+}
+.endFooter.active {
+  color: hwb(0 86% 14%);
+}
+.endFooter2.active {
+  color: hwb(0 86% 14%);
+}
+.body.active {
+  background-image: url(Imagens/BackgroundNight.jpg);
+  transition: 0.5s;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
