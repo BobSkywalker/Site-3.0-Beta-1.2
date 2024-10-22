@@ -143,8 +143,8 @@ footer p {
     font-size: medium;
   }
   .imagens {
-    width: 250px;
-    height: 350px;
+    height: 300px;
+    background-size: cover;
   }
   header a {
     font-size: medium;
@@ -153,15 +153,15 @@ footer p {
     display: grid;
   }
   .game {
-    width: 250px;
-    height: 350px;
+    width: 200px;
+    height: 300px;
   }
   footer {
     display: none;
     pointer-events: none;
   }
 }
-@media screen and (min-width: 601px) and (max-width: 1300px) {
+@media screen and (min-width: 601px) and (max-width: 1400px) {
   .game {
     width: 300px;
     height: 400px;
@@ -172,11 +172,12 @@ footer p {
     margin-bottom: 100px;
   }
   .imagens {
-    width: 300px;
     height: 400px;
+    background-size: cover;
   }
   body {
     height: 100%;
+    background-size: contain;
   }
   footer {
     display: none;
